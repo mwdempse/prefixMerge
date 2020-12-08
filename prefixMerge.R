@@ -150,9 +150,4 @@ prefixMerge <- function (x, y, by = intersect(names(x), names(y)), by.x = by,
   attr(res, "row.names") <- .set_row_names(nrow(res))
   res
 }
- 
-#custom merge
-prefixMerge(df1,df2, by="Time")
-  
-  
   
