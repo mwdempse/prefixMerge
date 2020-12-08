@@ -150,16 +150,7 @@ prefixMerge <- function (x, y, by = intersect(names(x), names(y)), by.x = by,
   attr(res, "row.names") <- .set_row_names(nrow(res))
   res
 }
-  
-# Example using Chick Weight data set
-
-#dummy data
-df1 <- head(ChickWeight,10)
-df2 <- tail(ChickWeight,10)
-
-#base merge
-merge(df1,df2, by="Time")
-
+ 
 #custom merge
 prefixMerge(df1,df2, by="Time")
   
